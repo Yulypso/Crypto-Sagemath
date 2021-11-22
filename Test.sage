@@ -21,3 +21,5 @@ g = bezout[0]
 x = bezout[1]
 y = bezout[2]
 print(g == a*x + b*y)
+
+print(euler_phi(65537))
