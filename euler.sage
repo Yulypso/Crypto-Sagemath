@@ -1,4 +1,4 @@
-#!/usr/bin/env sage -python3
+#!/usr/bin/env sage
 
 from sage.all import *
 

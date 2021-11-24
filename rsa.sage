@@ -1,9 +1,9 @@
-#!/usr/bin/env sage -python3
+#!/usr/bin/env sage
 
 from sage.all import *
 
 
-set_random_seed(0)
+# set_random_seed(0)
 
 # p, q : Choose 2 prime numbers
 p = random_prime(2 ^ 32)
