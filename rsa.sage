@@ -2,7 +2,6 @@
 
 from sage.all import *
 
-
 # set_random_seed(0)
 
 # p, q : Choose 2 prime numbers
