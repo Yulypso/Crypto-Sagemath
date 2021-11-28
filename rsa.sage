@@ -34,7 +34,7 @@ d = ZZ(1 / Mod(e, phi))
 print("Secret exponent d =", d)
 print("d * e mod phi = ", Mod(d * e, phi))
 print("public key (n, e) = (", N, ",", e,
-      "); private key (n, d) = (", N, ",", d, ")\n")
+      "); private key (d) = (", d, ")\n")
 
 # Select a message
 m = randrange(N)
