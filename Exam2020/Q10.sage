@@ -5,6 +5,7 @@ from sage.all import *
 # Q-10. Donnez tous les générateurs modulo 37, c’est-à-dire les éléments de {1, 2, . . . , 36} qui engendrent tout le groupe multiplicatif.
 
 p = 37
+print("Tous les générateurs modulo", p)
 print("Nombre de générateurs = ", euler_phi(p-1))
 
 generators = []
@@ -22,5 +23,5 @@ for g in range(1, p):
     if len(generated) == p - 1:
         generators.append(g)
     generated = []
-    
+
 print(generators)
