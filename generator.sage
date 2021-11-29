@@ -2,7 +2,7 @@
 
 from sage.all import *
 
-p = next_prime(203)
+p = 17 # 3 5 6 7 10 11 12 14
 print("p = ", p)
 print("p est un nombre premier: ", p in Primes())
 
