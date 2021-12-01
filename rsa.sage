@@ -36,6 +36,7 @@ print("d * e mod phi = ", Mod(d * e, phi))
 print("public key (n, e) = (", N, ",", e,
       "); private key (d) = (", d, ")\n")
 
+# Encryption/Decryption
 # Select a message
 m = randrange(N)
 print("message m = ", m)
@@ -46,4 +47,17 @@ print("encryption(m): c = m ^ e mod N =", c)
 
 # Message decryption
 m = power_mod(c, d, N)  # should be m again
-print("decryption(c): m = c ^ d mod N =", m)
+print("decryption(c): m = c ^ d mod N =", m, "\n")
+
+# Signature
+# Select a message
+m = randrange(N)
+print("message m = ", m)
+
+# Sign
+s = power_mod(m, d, N)
+print("Signature(m): s = m ^ d mod N =", s)
+
+# Verify
+m = power_mod(s, e, N)
+print("Check(s): m = s ^ e mod N =", m)
