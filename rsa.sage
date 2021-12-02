@@ -5,9 +5,11 @@ from sage.all import *
 # set_random_seed(0)
 
 # p, q : Choose 2 prime numbers
-p = random_prime(2 ^ 32)
+# random_prime(2 ^ 32)
+p = 1934720747213161123444005428327792833507231547135206223715331967523648393068534557850212140122551667934011233803718412153
 print("p = ", p)
-q = random_prime(2 ^ 32)
+# random_prime(2 ^ 32)
+q = 214962810512734861918545003841883228687974884177284802562476682581869712567333319742749643778039531875355054721512057259
 print("q = ", q)
 
 # N: Encryption modulo
@@ -25,6 +27,7 @@ e = ZZ.random_element(phi)
 while gcd(e, phi) != 1:
     print("\t-", e, "not prime with ", phi)
     e = ZZ.random_element(phi)
+e = 65537
 print("public exponent e = ", e)
 
 # d: Decryption exponent
